@@ -1,0 +1,22 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000o\u0000r\u0000t\u0000-\u0000T\u0000S\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matt-Chisholm/Sort-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matt-Chisholm/Sort-TS/issues"
+  },
+  "homepage": "https://github.com/Matt-Chisholm/Sort-TS#readme"
+}
