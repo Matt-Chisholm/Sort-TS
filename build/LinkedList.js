@@ -35,5 +35,20 @@ class LinkedList {
         }
         return length;
     }
+    at(index) {
+        if (!this.head) {
+            throw new Error('Index out of bounds');
+        }
+        let counter = 0;
+        let node = this.head;
+        while (node) {
+            if (counter === index) {
+                return node;
+            }
+            counter++;
+            node = node.next;
+        }
+        throw new Error('Index out of bounds');
+    }
 }
 exports.LinkedList = LinkedList;
