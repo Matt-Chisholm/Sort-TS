@@ -4,6 +4,8 @@ interface Sortable {
     swap(leftIndex: number, rightIndex: number): void;
 }
 
+// Left unused interface in for comparison
+
 export abstract class Sorter {
     abstract compare(leftIndex: number, rightIndex: number): boolean;
     abstract swap(leftIndex: number, rightIndex: number): void;

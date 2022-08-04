@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+// Left unused interface in for comparison
 class Sorter {
     sort() {
         const { length } = this;
