@@ -57,4 +57,21 @@ export class LinkedList {
 
         throw new Error('Index out of bounds');
     }
+
+    compare(leftIndex: number, rightIndex: number): boolean {
+        if (!this.head) {
+            throw new Error('List is empty');
+        }
+
+        return this.at(leftIndex).data > this.at(rightIndex).data;
+    }
+
+    swap(leftIndex: number, rightIndex: number): void {
+        const leftNode = this.at(leftIndex);
+        const rightNode = this.at(rightIndex);
+
+        const leftHand = leftNode.data;
+        leftNode.data = rightNode.data;
+        rightNode.data = leftHand;
+    }
 }
