@@ -1,5 +1,6 @@
-export class NumbersCollection {
+export class NumbersCollection extends Sorter {
     constructor(public data: number[]) {
+        super();
     }
 
     get length(): number {

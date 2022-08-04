@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NumbersCollection = void 0;
-class NumbersCollection {
+class NumbersCollection extends Sorter {
     constructor(data) {
+        super();
         this.data = data;
     }
     get length() {
