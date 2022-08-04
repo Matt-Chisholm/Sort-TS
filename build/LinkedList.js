@@ -21,6 +21,19 @@ class LinkedList {
         while (tail.next) {
             tail = tail.next;
         }
+        tail.next = node;
+    }
+    get length() {
+        if (!this.head) {
+            return 0;
+        }
+        let length = 1;
+        let node = this.head;
+        while (node.next) {
+            length++;
+            node = node.next;
+        }
+        return length;
     }
 }
 exports.LinkedList = LinkedList;
