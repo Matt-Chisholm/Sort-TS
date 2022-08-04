@@ -11,5 +11,12 @@ class CharactersCollection {
     compare(leftIndex, rightIndex) {
         return this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase();
     }
+    swap(leftIndex, rightIndex) {
+        const characterArray = this.data.split('');
+        const leftHand = characterArray[leftIndex];
+        characterArray[leftIndex] = characterArray[rightIndex];
+        characterArray[rightIndex] = leftHand;
+        this.data = characterArray.join('');
+    }
 }
 exports.CharactersCollection = CharactersCollection;
